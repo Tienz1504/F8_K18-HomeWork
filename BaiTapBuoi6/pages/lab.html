@@ -5,6 +5,44 @@
     <title>Lab Page</title>
 </head>
 <body>
-
+<h3>Mục lục</h3>
+<ul>
+    <li><a href="../index.html">Trang chủ</a></li>
+    <li><a href="./courses.html">Danh sách khóa học</a></li>
+    <li><a href="./submit.html">Trang gửi</a></li>
+    <li><a href="./contact.html">Liên hệ</a></li>
+    <li><a href="./about.html">Tùy chọn</a></li>
+</ul>
+    <div>
+        <form action="lab.html">
+            <label for="Search">Tìm kiếm</label>
+            <input id="Search" type="text" name="q" placeholder="Tìm kiếm">
+            <br/>
+            <span>Trình độ: </span>
+            <label for="Level1">1</label>
+            <input id="Level1" type="checkbox" name="level" value="1">
+            <label for="Level2">2</label>
+            <input id="Level2" type="checkbox" name="level" value="2">
+            <label for="Level3">3</label>
+            <input id="Level3" type="checkbox" name="level" value="3">
+            <br/>
+            <span>Hình thức: </span>
+            <label for="Online">Online</label>
+            <input id="Online" type="radio" name="mode" value="Online">
+            <label for="Offline">Offline</label>
+            <input id="Offline" type="radio" name="mode" value="Offline">
+            <br/>
+            <label for="Courses">Danh sách khóa học</label>
+            <select id="Courses" name="Courses">
+                <option name="Frontend">Frontend</option>
+                <option name="Backend">Backend</option>
+                <option name="DevOps">DevOps</option>
+                <option name="PHP">PHP</option>
+            </select>
+            <br/>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </div>
 </body>
 </html>
