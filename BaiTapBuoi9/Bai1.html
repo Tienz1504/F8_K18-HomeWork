@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giao diện (demo)</title>
+
+    <style>
+        h1 {
+            background-color: #f98000;
+            color: #fff;
+        }
+        #light:checked + label {
+            background-color: #ffffcc;
+            color: #8b5e00;
+        }
+        #light:checked ~ .theme-light {
+            background-color: #ffffcc;
+            color: #111827;
+        }
+        #light:checked ~ .theme-dark {
+            background-color: #e5e7eb;
+            color: #9ca3af;
+        }
+
+        #dark:checked + label {
+            background-color: #111827;
+            color: #fff;
+        }
+        #dark:checked ~ .theme-dark {
+            background-color: #111827;
+            color: #fff;
+        }
+        #dark:checked ~ .theme-light {
+            background-color: #e5e7eb;
+            color: #9ca3af;
+        }
+
+
+        #red:checked + label {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+        #red:checked ~ .color-red {
+            background-color: #fee2e2;
+            color: #7f1d1d;
+        }
+        #red:checked ~ .color-blue,
+        #red:checked ~ .color-green {
+            background-color: #e5e7eb;
+            color: #9ca3af;
+        }
+
+        #color-blue:checked + label {
+            background-color: #dbeafe;
+            color: #1d4ed8;
+        }
+        #blue:checked ~ .color-blue {
+            background-color: #dbeafe;
+            color: #1d4ed8;
+        }
+        #blue:checked ~ .color-red,
+        #blue:checked ~ .color-green {
+            background-color: #e5e7eb;
+            color: #9ca3af;
+        }
+
+        #green:checked + label {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        #green:checked ~ .color-green {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        #green:checked ~ .color-red,
+        #green:checked ~ .color-blue {
+            background-color: #e5e7eb;
+            color: #9ca3af;
+        }
+
+
+        #vi:checked + label {
+            background-color: #bbf7d0;
+            color: #166534;
+        }
+        #vi:checked ~ .lang-vi {
+            background-color: #bbf7d0;
+            color: #166534;
+        }
+        #vi:checked ~ .lang-en {
+            background-color: #e5e7eb;
+            color: #9ca3af;
+        }
+
+        #en:checked + label {
+            background-color: #bfdbfe;
+            color: #1d4ed8;
+        }
+        #en:checked ~ .lang-en {
+            background-color: #bfdbfe;
+            color: #1d4ed8;
+        }
+        #en:checked ~ .lang-vi {
+            background-color: #e5e7eb;
+            color: #9ca3af;
+        }
+
+
+        #op1:checked + label {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+        #op1:checked ~ #option1 {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        #op2:checked + label {
+            background-color: #bbf7d0;
+            color: #166534;
+        }
+        #op2:checked ~ #option2 {
+            background-color: #bbf7d0;
+            color: #166534;
+        }
+
+        #op3:checked + label {
+            background-color: #fee2e2;
+            color: #b91c1c;
+        }
+        #op3:checked ~ #option3 {
+            background-color: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .options {
+            background-color: #e5e7eb;
+            color: #9ca3af;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Trung tâm cấu hình giao diện (Demo)</h1>
+<!--Theme-->
+<p>Chọn giao diện (Theme):</p>
+<input type="radio" name="theme" id="light">
+<label for="light">Light</label>
+<input type="radio" name="theme" id="dark">
+<label for="dark">Dark</label>
+<!--Color-->
+<p>Chọn Màu chủ đạo (color):</p>
+<input type="radio" name="color" id="red">
+<label for="red">Red</label>
+<input type="radio" name="color" id="blue">
+<label for="blue">Blue</label>
+<input type="radio" name="color" id="green">
+<label for="green">Green</label>
+<!--Language-->
+<p>Chọn Ngôn ngữ (Language):</p>
+<input type="radio" name="language" id="vi">
+<label for="vi">VI</label>
+<input type="radio" name="language" id="en">
+<label for="en">EN</label>
+<!--Options-->
+<p>Tùy chọn bổ sung (Options - Checkbox):</p>
+<input type="checkbox" id="op1" name="option[]">
+<label for="op1">Hiển thị mô tả nâng cao</label>
+<input type="checkbox" id="op2" name="option[]">
+<label for="op2">Bật chế độ Eco</label>
+<input type="checkbox" id="op3" name="option[]">
+<label for="op3">Hiển thị cảnh báo quan trọng</label>
+<!--Discription-->
+<p class="theme-light">Theme Light: Giao diện sáng, chữ đen.</p>
+<p class="theme-dark">Theme Dark: Giao diện tối,chữ sáng.</p>
+<p class="color-red">Màu Red: được nhấn mạnh khi chọn Red.</p>
+<p class="color-blue">Màu Blue: được nhấn mạnh khi chọn Blue.</p>
+<p class="color-green">Màu Green: được nhấn mạnh khi chọn Green.</p>
+<p class="lang-vi">[VI] Xin chào bạn! Khi chọn VI, dòng này rõ hơn</p>
+<p class="lang-en">[EN] Hello world! Khi chọn EN, dòng này rõ hơn</p>
+<p class="options" id="option1">Mô tả nâng cao: giải thích kĩ hơn về cách các lựa chọn đang ảnh hưởng giao diện</p>
+<p class="options" id="option2">Chế độ Eco: mô phỏng trạng thái tiết kiệm tài nguyên cho giao diện</p>
+<p class="options" id="option3">Cảnh báo quan trọng: khu vực dùng để nhấn mạnh thông tin hệ thống.</p>
+
+</body>
+</html>
