@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.landing_page{
+    background-image: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=2070&auto=format&fit=crop');
+    padding: 4rem;
+}
+.main {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+}
+#title {
+        font-size: 4rem ;
+        font-weight: 700;
+        color: #1e293b;
+}
+#subtitle {
+    font-size: 4rem ;
+    font-weight: 700;
+    color: #c084fc;
+}
+#intro {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #1e293b;
+}
+.button_check {
+    padding: 1.5rem 3.5rem;
+    background-color: #a855f7;
+    color: #ffffff;
+    border: 0;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    font-weight: 600;
+}
+button:hover {
+    background-color: #9333ea;
+}
+.logo{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+#logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10rem;
+    border: 0.3rem solid rgba(192, 132, 252, 0.6);
+    margin-bottom: 1rem;
+}
+.logo p {
+    font-weight: 600;
+    font-size: 2rem;
+}
+.logo strong {
+    font-weight: 700;
+    color: #9333ea;
+}
+#check_box {
+    margin: 0.5rem;
+}
+label {
+    font-size: 1.2rem;
+}
+.tip{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+.tip_title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.tip_intro {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #38416b;
+}
+input:checked ~ .tip {
+    background-color: rgba(192, 132, 252, 0.35);
+    color: #6b21a8;
+}
+.benefits_box {
+    margin: 2rem;
+    padding: 2rem 0;
+}
+.benefit_check {
+    font-size: 1rem;
+    font-weight:600;
+    margin: 1.5rem;
+}
+.benefit_check img {
+    width: 1rem;
+}
+.footer{
+    background-color: rgba(255, 255, 255, 0.35);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-top: 0.1rem solid rgba(192, 132, 252, 0.6);
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
