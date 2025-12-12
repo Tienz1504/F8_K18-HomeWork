@@ -378,6 +378,7 @@ input:checked ~ .tip {
 ,#question-03:checked + .question-list .question-focus .open {
     display: none;
 }
+
 #question-01:checked + .question-list .question-focus .close
 ,#question-02:checked + .question-list .question-focus .close
 ,#question-03:checked + .question-list .question-focus .close {
@@ -388,13 +389,6 @@ input:checked ~ .tip {
 ,#question-02:checked + .question-list .question-content
 ,#question-03:checked + .question-list .question-content {
     display: block;
-}
-
-#question-01:checked + .question-list .question-focus
-,#question-02:checked + .question-list .question-focus
-,#question-03:checked + .question-list .question-focus {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
 }
 
 .question-content {
