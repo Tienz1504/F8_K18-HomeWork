@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="landing_page">
+    <div class="main">
+        <div class="header">
+            <h1>
+                <strong id="title">Bắt đầu học lập trình</strong>
+                <br/>
+                <strong id="subtitle">Học lập trình tại F8</strong>
+            </h1>
+            <span id="intro">Từng bước làm chủ lập trình với hệ thống khóa học bài bản, lộ trình rõ ràng và nội dung thực chiến bám sát nhu cầu doanh nghiệp. Học từ nền tảng tới nâng cao ngay trên F8.</span>
+        </div>
+        <div class="content_article">
+            <div class="button_class">
+                <input id="button-start" type="checkbox" hidden>
+                <label for="button-start" class="button_start">Bắt đầu học lập trình miễn phí</label>
+                <div class="modal-start-dialog">
+                    <div class="modal-start-heading">
+                        <a href="index.html" class="toggle-close-btn">&times;</a>
+                        <h2>Bắt đầu học lập trình miễn phí</h2>
+                        <p>Học HTML, CSS, JavaScript + bài tập thực hành</p>
+                    </div>
+                    <div class="modal-start-body">
+                        <ul>
+                            <li>
+                                <img class="modal-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Sign-check-icon.png/960px-Sign-check-icon.png" alt="check1">
+                                Khóa học cơ bản miễn phí
+                            </li>
+                            <li>
+                                <img class="modal-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Sign-check-icon.png/960px-Sign-check-icon.png" alt="check1">
+                                Video chất lượng cao
+                            </li>
+                            <li>
+                                <img class="modal-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Sign-check-icon.png/960px-Sign-check-icon.png" alt="check1">
+                                Lộ trình rõ ràng
+                            </li>
+                            <li>
+                                <img class="modal-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Sign-check-icon.png/960px-Sign-check-icon.png" alt="check1">
+                                Không cần thẻ tín dụng
+                            </li>
+                        </ul>
+                        <button class="modal-start-body-btn"><b>BẮT ĐẦU NGAY</b></button>
+                    </div>
+                    <div class="modal-start-footer">
+                        <a href="#">Đã có tài khoản ?</a>
+                        ・
+                        <a href="#">Muốn nâng cao ?</a>
+                    </div>
+                    </div>
+                <label for="button-start" class="modal-overlay"></label>
+                <div class="button_support">
+                    <input id="button-support" type="checkbox" hidden>
+                    <label for="button-support">Tư vấn ngay</label>
+                    <div class="modal-suport-dialog">
+                        <div class="modal-suport-heading">
+                            <a href="index.html" class="toggle-close-btn">&times;</a>
+                            <h2>Đăng kí tư vấn</h2>
+                            <p>Điền thông tin để được tư vấn lộ trình phù hợp</p>
+                        </div>
+                        <div class="modal-support-body">
+                            <form class="support-register-form" action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+                                <div class="modal-support modal-support-user">
+                                    <label class="support-label" for="register-user">
+                                        <b>Họ và tên </b><span class="required">*</span>
+                                    </label>
+                                    <input id="register-user" type="text" placeholder="Nguyễn Văn A" name="support-username" required>
+                                    <div class="user-hover">
+                                        <span>Nhập họ và tên của bạn đầy đủ</span>
+                                    </div>
+                                    <div class="triangle triangle-user"></div>
+                                </div>
+                                <div class="modal-support modal-support-number">
+                                    <label class="support-label" for="register-number">
+                                        <b>Số điện thoại </b><span class="required">*</span>
+                                    </label>
+                                    <input id="register-number" type="number" placeholder="0912345678" name="support-numbphone" required>
+                                    <div class="phone-hover">
+                                        <span>Số điện thoại để chúng tôi tư vấn</span>
+                                    </div>
+                                    <div class="triangle triangle-phone"></div>
+                                </div>
+                                <div class="modal-support modal-support-email">
+                                    <label class="support-label" for="register-email">
+                                        <b>Email</b>
+                                    </label>
+                                    <input id="register-email" type="email" placeholder="example@gmail.com" name="support-email">
+                                    <div class="email-hover">
+                                        <span>Email để nhận thông tin khóa học(Không bắt buộc)</span>
+                                    </div>
+                                    <div class="triangle triangle-email">
+                                    </div>
+                                </div>
+                                <div class="modal-support-course">
+                                    <b>Khóa học quan tâm <span class="required">*</span></b>
+                                    <div class="list-box">
+                                        <input id="list01" type="checkbox" name="support-course[]" value="html-css">
+                                        <label for="list01">HTML & CSS</label>
+                                        <div class="list-box-hover">
+                                            <span>Khóa nền tảng xây dựng giao diện web</span>
+                                        </div>
+                                        <div class="list-hoversub"></div>
+                                    </div>
+                                    <div class="list-box">
+                                        <input id="list02" type="checkbox" name="support-course[]" value="js">
+                                        <label for="list02">JavaScript</label>
+                                        <div class="list-box-hover">
+                                            <span>Ngôn ngữ lập trình cho web động</span>
+                                        </div>
+                                        <div class="list-hoversub"></div>
+                                    </div>
+                                    <div class="list-box">
+                                        <input id="list03" type="checkbox" name="support-course[]" value="frontEnd">
+                                        <label for="list03">Front-end lộ trình</label>
+                                        <div class="list-box-hover">
+                                            <span>Lộ trình hoàn chỉnh trở thành Front-end Developer</span>
+                                        </div>
+                                        <div class="list-hoversub"></div>
+                                    </div>
+                                    <div class="list-box">
+                                        <input id="list04" type="checkbox" name="support-course[]" value="reactJs">
+                                        <label for="list04">ReactJS</label>
+                                        <div class="list-box-hover">
+                                            <span>Thư viện JavaScript phổ biến nhất hiện nay</span>
+                                        </div>
+                                        <div class="list-hoversub"></div>
+                                    </div>
+                                    <div class="list-box">
+                                        <input id="list05" type="checkbox" name="support-course[]" value="support" required>
+                                        <label for="list05">Chưa rõ - cần tư vấn</label>
+                                        <div class="list-box-hover">
+                                            <span>Chúng tôi sẽ tư vấn lộ trình phù hợp với bạn</span>
+                                        </div>
+                                        <div class="list-hoversub"></div>
+                                    </div>
+                                </div>
+                                <div class="modal-support-footer">
+                                    <input type="submit" id="sub" hidden>
+                                    <label for="sub"><b>ĐĂNG KÍ TƯ VẤN NGAY</b></label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <label class="modal-support-overlay"></label>
+                </div>
+            </div>
+            <div class="logo">
+                <img id="logo" src="https://files.fullstack.edu.vn/f8-prod/public-images/67c022029788c.png" alt="logo"> <br/>
+            <span>Cùng với hơn <strong>2,500+</strong> học viên đang theo lộ trình tại F8</span>
+            </div>
+            <div class="check_box">
+                <input id="check_box" type="checkbox">
+                <label for="check_box">Bật màu học tập tập trung</label>
+                <div class="tip">
+                    <h3 class="tip_title">Lời khuyên khi học lập trình tại F8</h3>
+                    <p class="tip_intro">
+                        Hãy bắt đầu với các khóa nền tảng như HTML, CSS và JavaScript trên F8, xem video kết hợp làm bài tập và dự án nhỏ.
+                        Mỗi ngày chỉ cần dành một ít thời gian để code, đặt câu hỏi trong cộng đồng và kiên trì hoàn thành trọn lộ trình.Bạn sẽ thấy mình tiến bộ nhanh hơn rất nhiều.
+                    </p>
+                </div>
+            </div>
+            <div class="benefits_box">
+                    <span class="benefit_check">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Sign-check-icon.png/960px-Sign-check-icon.png" alt="iconcheck">
+                        Lộ trình học rõ ràng từ cơ bản đến nâng cao
+                    </span>
+                <span class="benefit_check">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Sign-check-icon.png/960px-Sign-check-icon.png" alt="iconcheck">
+                        Bài tập, project thực tế theo từng khóa
+                    </span>
+                <span class="benefit_check">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Sign-check-icon.png/960px-Sign-check-icon.png" alt="iconcheck">
+                        Cộng đồng F8 hỗ trợ hỏi đáp mỗi ngày
+                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <p> &copy; 2025 Học Lập Trình Tại F8</p>
+    </footer>
+</body>
+</html>

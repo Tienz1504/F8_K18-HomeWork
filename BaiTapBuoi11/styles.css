@@ -32,7 +32,10 @@
     color: #1e293b;
     line-height: 5rem;
 }
-.button_check {
+.button_class{
+    display: inline-block;
+}
+.button_start {
     padding: 1.5rem 3.5rem;
     background-color: #a855f7;
     color: #ffffff;
@@ -42,7 +45,7 @@
     margin-top: 3rem;
     font-weight: 600;
 }
-button:hover {
+.button_start:hover {
     background-color: #9333ea;
 }
 .logo{
