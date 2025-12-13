@@ -79,6 +79,10 @@ li:hover > ul {
     border: 1px solid #dddddd;
 }
 
-span:hover , li:hover {
+span:hover {
     color: #d62828;
+}
+span b:hover {
+    border-bottom: 2px solid #d62828;
+    padding: 3px;
 }
