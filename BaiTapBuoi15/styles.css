@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.landing_page{
+    background-image: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    padding: 2.5rem;
+}
+.main {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+.content_article {
+    text-align: center;
+}
+
+#title {
+        font-size: 4rem ;
+        font-weight: 700;
+        color: #1e293b;
+}
+#subtitle {
+    font-size: 4rem ;
+    font-weight: 700;
+    color: #c084fc;
+}
+#intro {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #1e293b;
+    line-height: 5rem;
+}
+.button_class{
+    display: inline-block;
+    padding: 1rem 1rem;
+    font-size: 1.125rem;
+}
+.button_start {
+    padding: 1.5rem 3.5rem;
+    background-color: #a855f7;
+    color: #ffffff;
+    border: 0;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+/* modal decor */
+.modal-start-dialog .modal-start-heading {
+    position: relative;
+    padding: 0.5rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 2rem;
+}
+.modal-start-heading h2 {
+    font-size: 2rem;
+}
+.modal-start-heading p {
+    font-size: 1.2rem;
+}
+.modal-start-heading .toggle-close-btn{
+    position: absolute;
+    right: 1.5rem;
+    top: -1.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.modal-start-body .modal-icon{
+    width: 1rem;
+}
+.modal-start-body li {
+    text-align: left;
+    line-height: 2rem;
+}
+.modal-start-body ul{
+    list-style: none;
+    text-align: left;
+    padding: 1rem 2rem;
+}
+.modal-start-body-btn{
+    display: block;
+    margin: auto;
+    border: none;
+    color: white;
+    width: calc(100% - 10rem);
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #a855f7;
+    padding: 1rem 1rem;
+}
+.modal-start-footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+.modal-start-footer a{
+    text-decoration: none;
+    color: #a855f7;
+}
+.modal-start-footer a:hover {
+    text-decoration: underline;
+}
+.modal-start-dialog {
+    display: none;
+}
+/* start modal */
+#button-start:checked ~ .modal-start-dialog {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 1.2rem;
+    width: 35rem;
+    height: 30rem;
+    font-size: 1.25rem;
+    color: black;
+    z-index: 9999;
+}
+#button-start:checked ~ .modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+/* end modal */
+.button_support{
+    display: inline-block;
+    padding: 1.5rem 3.5rem;
+    margin-left: 1rem;
+    background-color: #f05123;
+    color: #ffffff;
+    border: 0;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    font-weight: 600;
+}
+.button_start:hover {
+    background-color: #9333ea;
+}
+.button_support:hover {
+    background-color: #d8431c;
+}
+/* modal support decor */
+.modal-suport-dialog {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+.modal-suport-heading{
+    text-align: center;
+}
+.modal-suport-heading .toggle-close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.modal-support-body {
+    margin: 2rem;
+    text-align: left;
+}
+.user-hover , .phone-hover , .email-hover , .list-box-hover {
+    display: none;
+}
+.modal-suport-dialog .modal-suport-heading h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.modal-support-user:hover .user-hover
+, .modal-support-number:hover .phone-hover
+, .modal-support-email:hover .email-hover
+, .list-box:hover .list-box-hover {
+    display: block;
+    position: absolute;
+    top: -4rem;
+    color: white;
+    background-color: #64748b;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.modal-support-user:hover .triangle-user
+, .modal-support-number:hover .triangle-phone
+, .modal-support-email:hover .triangle-email
+, .list-box:hover .list-hoversub {
+    display: block;
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
+    width: 0;
+    font-size: 0.7rem;
+    border-top: 0.7rem solid #64748b;
+    border-right: 0.7rem solid transparent;
+    border-left: 0.7rem solid transparent;
+}
+.modal-support > label, .modal-support > input {
+    display: block;
+}
+
+.modal-support input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    font-size: 1.2rem;
+    outline-color: rgba(193, 193, 193, 0.98);
+}
+.required {
+    color: #ef4444;
+}
+.modal-support , .list-box {
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.modal-support-footer {
+    display: block;
+    text-align: center;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #f05123;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+/*start modal support */
+.modal-suport-dialog {
+    display: none;
+}
+#button-support:checked ~ .modal-suport-dialog {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 1.2rem;
+    width: 40rem;
+    height: 50rem;
+    font-size: 1rem;
+    color: black;
+    z-index: 9999;
+}
+#button-support:checked ~ .modal-support-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+}
+
+/*end modal support */
+.logo{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+#logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10rem;
+    border: 0.3rem solid rgba(192, 132, 252, 0.6);
+    margin-bottom: 1rem;
+}
+.logo p {
+    font-weight: 600;
+    font-size: 2rem;
+}
+.logo strong {
+    font-weight: 700;
+    color: #9333ea;
+}
+#check_box {
+    margin: 0.5rem;
+}
+label {
+    font-size: 1.2rem;
+}
+.tip{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+.tip_title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.tip_intro {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #38416b;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+}
+input:checked ~ .tip {
+    background-color: rgba(192, 132, 252, 0.35);
+    color: #6b21a8;
+}
+.benefits_box {
+    margin: 2rem;
+    padding: 2rem 0;
+}
+.benefit_check {
+    font-size: 1rem;
+    font-weight:600;
+    margin: 1.5rem;
+}
+.benefit_check img {
+    width: 1rem;
+}
+/*question content */
+.question-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+.question-body {
+    margin: 2rem auto;
+    width: 35%;
+}
+.question-list{
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
+    padding: 0;
+    margin-bottom: 0.8rem;
+    border: 1px solid rgba(192, 132, 252, 0.3);
+}
+.question-focus {
+    display: block;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}
+.question-title {
+    display: inline-block;
+    width: calc(100% - 1.2rem);
+}
+
+.open, .close {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.question-content {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.close , .question-content {
+    display: none;
+}
+#question-01:checked + .question-list .question-focus .open
+,#question-02:checked + .question-list .question-focus .open
+,#question-03:checked + .question-list .question-focus .open {
+    display: none;
+}
+
+#question-01:checked + .question-list .question-focus .close
+,#question-02:checked + .question-list .question-focus .close
+,#question-03:checked + .question-list .question-focus .close {
+    display: inline-block;
+}
+
+#question-01:checked + .question-list .question-content
+,#question-02:checked + .question-list .question-content
+,#question-03:checked + .question-list .question-content {
+    display: inline-block;
+}
+
+.question-content {
+    margin: 0.3rem 1rem 1rem 1rem;
+}
+
+.question-focus:hover {
+    background-color: rgba(192, 132, 252, 0.15);
+}
+/* end main content */
+.footer{
+    background-color: rgba(255, 255, 255, 0.35);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-top: 0.1rem solid rgba(192, 132, 252, 0.6);
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.main-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #334155;
+    font-weight: bold;
+    z-index: 99999;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.header-bar-body {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    height: 4rem;
+    border-radius: 2.5rem;
+}
+#logo-f8 {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+}
+.menu-item {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0
+}
+.item {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+}
+.item-menu {
+    padding: 0.75rem;
+    border-radius: 2rem;
+}
+.item-list {
+    width: auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+.item-content {
+    padding: 0.75rem;
+    border-radius: 2rem;
+}
+.menu-item > .item-list {
+    position: relative;
+}
+.item-list:hover .item-content , .item:hover > .item-list {
+    background-color: rgba(168, 85, 247, 0.1);
+    border: 0.1rem solid #e2e8f0;
+    color: #9333ea;
+    text-align: left;
+}
+.item-list:hover .title {
+    color: #9333ea;
+}
+.dom-arrow:hover
+, .event-arrow:hover
+, .html-arrow:hover {
+    background-color: rgba(168, 85, 247, 0.1);
+    color: #9333ea;
+    width: 10rem;
+    text-align: left;
+}
+.sub ,
+.sub-sub ,
+.sub-sub-02A ,
+.sub-sub-02 ,
+.sub-sub-03 ,
+.sub-sub-04 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2rem;
+    padding: 0.5rem;
+}
+.menu-sub
+, .menu-sub-2
+, .menu-sub-3
+, .menu-sub-sub
+, .menu-sub-subA
+, .menu-sub-subB
+, .menu-sub-subC
+, .menu-sub-sub-02
+,.menu-sub-sub-02A
+, .menu-sub-sub-02B
+, .menu-sub-sub-02C
+, .menu-sub-sub-03
+, .menu-sub-sub-03A
+, .menu-sub-sub-03B
+, .menu-sub-sub-03C
+, .menu-sub-sub-04
+, .menu-sub-sub-04A
+, .menu-sub-sub-04B
+, .menu-sub-sub-04C
+{
+    display: none;
+    background-color: #FFFFFF;
+    border-radius: 0.8rem;
+    border: 1px solid #e2e8f0;
+    min-width: 11rem;
+}
+.item:hover > .menu-sub{
+    display: block;
+    position: absolute;
+    top: 2.7rem;
+    left: calc(100% - 59rem);
+    background-color: #FFFFFF;
+    border-radius: 0.8rem;
+    border: 1px solid #e2e8f0;
+    min-width: 5rem;
+}
+.item:hover > .menu-sub-2 {
+    display: block;
+    position: absolute;
+    top: 2.7rem;
+    left: calc(100% - 52rem);
+    background-color: #FFFFFF;
+    border-radius: 0.8rem;
+    border: 1px solid #e2e8f0;
+    min-width: 5rem;
+}
+.item:hover > .menu-sub-3 {
+    display: block;
+    position: absolute;
+    top: 2.7rem;
+    left: calc(100% - 40.5rem);
+    background-color: #FFFFFF;
+    border-radius: 0.8rem;
+    border: 1px solid #e2e8f0;
+    min-width: 5rem;
+}
+.sub:hover
+, .sub-sub:hover
+, .sub-sub-02:hover
+, .sub-sub-03:hover
+, .sub-sub-04:hover
+{
+    background-color: rgba(168, 85, 247, 0.1);
+    border-radius: 0.8rem;
+}
+.sub:hover > .title-sub
+, .sub:hover > .arrow-icon
+, .sub-sub:hover > .title-sub-sub
+, .sub-sub:hover > .arrow-icon
+, .sub-sub-02:hover > .title-sub-sub
+, .sub-sub-02:hover > .arrow-icon
+, .sub-sub-03:hover > .title-sub-sub
+, .sub-sub-03:hover > .arrow-icon
+, .sub-sub-04:hover > .title-sub-sub
+, .sub-sub-04:hover > .arrow-icon
+{
+    color: #9333ea;
+}
+.sub-02:hover > .menu-sub-sub {
+    display: block;
+    position: absolute;
+    top: 2.3rem;
+    left: calc(100% - 0.2rem);
+}
+.sub-03:hover > .menu-sub-sub {
+    display: block;
+    position: absolute;
+    top: 5rem;
+    left: 100%;
+}
+.sub-01:hover > .menu-sub-sub {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+.sub-sub:hover > .menu-sub-sub-02 {
+    display: block;
+    position: absolute;
+    top: 4.6rem;
+    left:calc(100% - 0.2rem);
+}
+.sub-sub-02:hover > .menu-sub-sub-03 {
+    display: block;
+    position: absolute;
+    top: 4.6rem;
+    left: 100%;
+}
+.sub-sub-03:hover > .menu-sub-sub-04 {
+    display: block;
+    position: absolute;
+    top: 4.6rem;
+    left: calc(100% - 0.2rem);
+}
+.sub-sub:hover > .menu-sub-sub-02A {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+.sub:hover > .menu-sub-subA {
+    display: block;
+    position: absolute;
+    top: 4.6rem;
+    left: calc(100% - 0.2rem);
+}
+.sub-sub-02:hover .menu-sub-sub-03A {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+.sub-sub-03:hover .menu-sub-sub-04A {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+.sub-01:hover > .menu-sub-subB {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+.sub-sub-02:hover > .menu-sub-sub-02B {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+.sub-sub-02A:hover > .menu-sub-sub-03B {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+.sub-sub-03A:hover > .menu-sub-sub-04B {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+.sub-02:hover > .menu-sub-subC {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: calc(100% - 0.2rem);
+}
+.sub-sub-01:hover > .menu-sub-sub-02C {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+.sub-sub-02:hover > .menu-sub-sub-03C {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+.sub-sub-03:hover > .menu-sub-sub-04C {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+}
+/*End Menu*/
+.header-bar-link {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    text-align: center;
+}
+
+.link {
+    border-radius: 3rem;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    width: 120px;
+}
+
+.link-start {
+    background-color: #a855f7;
+}
+
+.link-start a {
+    color: #FFFFFF;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #334155;
+}
