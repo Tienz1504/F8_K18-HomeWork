@@ -1,0 +1,102 @@
+.header {
+    display: flex;
+}
+
+.header-content h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 6px;
+}
+
+.header-content p {
+    font-weight: 400;
+    color: #59595a;
+    width: 850px;
+}
+
+.header-btn {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    left: 775px;
+    bottom: 0;
+}
+
+.header-btn button {
+    border-radius: 8px;
+    border: 1px solid #f1f1f3;
+    background-color: #fcfcfd;
+    padding: 18px 24px;
+    color: #262626;
+    font-weight: 500;
+    width: 120px;
+    height: 63px;
+}
+
+.benefits-content {
+    margin-top: 50px;
+}
+
+.benefits-card-top {
+    display: flex;
+}
+
+.benefits-card-bottom {
+    display: flex;
+    margin-top: 20px;
+}
+
+.benefits-card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 519px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 50px;
+}
+
+.benefits-card:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.benefits-card-number {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.benefits-card-content {
+    margin-top: 50px;
+}
+
+.benefits-card-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.benefits-card-content p {
+    margin-top: 14px;
+    color: #4c4c4d;
+}
+
+.benefits-card-icon {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 50px;
+}
+
+.benefits-card-icon button {
+    width: 74px;
+    height: 74px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #f1f1f3;
+    background-color: #fcfcfd;
+}
