@@ -68,3 +68,23 @@ function toFahrenheit(celsius){
     return fahrenheit
 }
 console.log(toFahrenheit(75));
+
+//Lesson 6: Household Electricity Bill Calculation
+function calculateElectricityBill(kWh){
+    if(typeof kWh != 'number' || kWh <0){
+        return "Invalid kWh"
+    }
+    let sum=0
+    if(kWh <=50){
+        sum=kWh*1678
+    }else if(kWh <=100){
+        sum=50*1678+(kWh-50)*1734
+    }else if(kWh <=200){
+        sum=((50*1678)+(50*1734))+(kWh-100)*2014
+    }else{
+        sum=((50*1678)+(50*1734)+(100*2014))+(kWh-200)*2536
+    }
+    return sum
+
+}
+console.log(calculateElectricityBill(300));
