@@ -26,6 +26,7 @@ function createOrder(productId, orderQuantity) {
     // Reduce inventory levels
     product.remaining -= orderQuantity;
     const order = {
+        id: maxOrderId++,
         productId: productId,
         quantity: orderQuantity
     };
